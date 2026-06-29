@@ -1,0 +1,1 @@
+# Predicion-da-evolucion-de-pacientes-de-ictus-a-partir-de-variables-clinicas-e-probas-de-imaxe
