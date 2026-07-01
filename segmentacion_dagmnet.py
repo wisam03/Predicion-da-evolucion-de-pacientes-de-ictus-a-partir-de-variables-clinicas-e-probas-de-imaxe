@@ -109,7 +109,7 @@ def ejecutar_dagmnet(dagmnet_dir, paciente_dir, model="DAGMNet_CH3"):
     return result.returncode
 
 def main():
-    # Comprobación de seguridad: se verifica que el usuario haya pasado todos los directorios obligatorios por terminal
+    # Se verifica que el usuario haya pasado todos los directorios obligatorios por terminal
     if len(sys.argv) < 5:
         print("Uso: python script.py <dagmnet_dir> <dwi_dir> <adc_dir> <output_dir> [--paciente ID]")
         sys.exit(1)
@@ -146,8 +146,4 @@ def main():
         print(f"Resultado: {'OK' if ret == 0 else 'ERROR'}")
 
 if __name__ == "__main__":
-<<<<<<< Updated upstream
     main()
-=======
-    main()
->>>>>>> Stashed changes
