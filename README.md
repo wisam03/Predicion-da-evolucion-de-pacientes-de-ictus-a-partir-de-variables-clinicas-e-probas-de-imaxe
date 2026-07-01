@@ -10,7 +10,6 @@ Repositorio do Traballo de Fin de Grao que contén os scripts e cadernos jupyter
 | `extraccion_radiomicas.py` | Extrae características radiómicas das máscaras de lesión e actualiza o Excel |
 | `TOAST_R_A_NIH_A_vasc.ipynb` | Modelado con variables clínicas e características vasculares |
 | `R_A_VOL_TOAST_shape_volume_ml_intensity_range.ipynb` | Modelado con variables clínicas e radiómicas morfolóxicas e de intensidade|
-| `Archivo_IS_MRI_actualizado.xlsx` | Base de datos clínica (variables clínicas + radiómicas) |
 
 ---
 
@@ -84,7 +83,7 @@ ST_FIDIS_001_result.png
 
 ```bash
 python extraccion_radiomicas.py \
-    --excel /ruta/Archivo_IS_MRI_actualizado.xlsx \
+    --excel /ruta/Excel.xlsx \
     --root  /resultados/segmentacion/_ADS_input \
     --prefix ST_
 ```
@@ -110,7 +109,7 @@ Abre o caderno correspondente ao momento temporal:
 | Caderno | Momento | Variables principais |
 |---|---|---|
 | `TOAST_R_A_NIH_A_vasc.ipynb` | 48h / Alta | NIHSS, TOAST, R_A, vasculares |
-| `R_A_VOL_TOAST_shape_volume_ml_intensity_range.ipynb` | Ingreso / 24h | NIHSS, VOL, radiómicas morfolóxicas |
+| `R_A_VOL_TOAST_shape_volume_ml_intensity_range.ipynb` | Ingreso / 24h | NIHSS, VOL, radiómicas morfolóxicas e de intensidade |
 
 Os cadernos realizan automaticamente validación cruzada estratificada (5 particións), cálculo de métricas (F1-macro, kappa, MAE, Acc±1, ρ de Spearman) e selección do mellor modelo.
 
