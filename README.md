@@ -109,7 +109,7 @@ Abre o caderno correspondente ao momento temporal:
 | Caderno | Momento | Variables principais |
 |---|---|---|
 | `TOAST_R_A_NIH_A_vasc.ipynb` | Ingreso / 4-10 día / Alta | NIHSS, TOAST, R_A, vasculares |
-| `R_A_VOL_TOAST_shape_volume_ml_intensity_range.ipynb` | Ingreso / 4-10 día / Alta | NIHSS, VOL, radiómicas morfolóxicas e de intensidade |
+| `R_A_VOL_TOAST_shape_volume_ml_intensity_range.ipynb` | Ingreso / 4-10 día / Alta | NIHSS, VOL, radiómicas de forma e de intensidade |
 
 Os cadernos realizan automaticamente validación cruzada estratificada (5 particións), cálculo de métricas (F1-macro, kappa, MAE, Acc±1, ρ de Spearman) e selección do mellor modelo.
 
